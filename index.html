@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - SOULFORASOULRECORD</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>SOULFORASOULRECORD</h1>
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="socials.html">Social Media</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container welcome-section">
+    <h2>Welcome to SOULFORASOULRECORD</h2>
+    <p class="intro-text">
+      We’re so glad you’re here! SOULFORASOULRECORD isn’t just a label; it’s a family—a space where artists grow, thrive, and create without limitations. Let’s make something amazing together.
+    </p>
+    <section class="about-label">
+      <h3>About Our Label</h3>
+      <p>
+        We are specifically a family, not a business where everyone takes advantage of each other. Our culture thrives on mutual respect, support, and collaboration. In this environment, we prioritize the well-being of every member, recognizing that our success is rooted in trust and genuine connections.
+      </p>
+      <p>
+        Actions that undermine this family dynamic will not be tolerated; doing that will get you dropped out of the contract. We believe in uplifting one another and fostering an atmosphere where creativity and individuality can flourish, allowing each member to shine while contributing to the collective vision.
+      </p>
+    </section>
+    <div class="cta">
+      <a href="about.html" class="btn">Learn More About Us</a>
+      <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </main>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-consent-banner" class="cookie-consent-banner">
+    <p>
+      We use cookies to improve your experience on our site. By continuing to use our website, you consent to our use of cookies. 
+      <a href="privacy.html">Learn more</a>.
+    </p>
+    <button id="accept-cookie" class="accept-cookie-btn">Accept</button>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 SOULFORASOULRECORD. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Check if the user has already accepted cookies
+    if (!localStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookie-consent-banner').style.display = 'flex';
+    }
+
+    // Handle the "Accept" button click
+    document.getElementById('accept-cookie').addEventListener('click', function() {
+      localStorage.setItem('cookiesAccepted', 'true'); // Store consent in localStorage
+      document.getElementById('cookie-consent-banner').style.display = 'none'; // Hide the banner
+    });
+  </script>
+</body>
+</html>
